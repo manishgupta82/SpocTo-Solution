@@ -16,6 +16,7 @@ body {
 header {
     padding: 10px 0;
 }
+
 /*header fixed*/
 .navbar-fixed-top {
     position: fixed !important;
@@ -23,6 +24,7 @@ header {
     left: 0;
     z-index: 1030;
 }
+
 footer {
     background-color: #222;
     color: #ccc;
@@ -105,26 +107,67 @@ footer {
 /* horigental rule*/
 .custom-hr {
     width: 50%;
-    border-top: 3px solid #007bff;  /* You can adjust the thickness and color */
-    margin: 20px auto;  /* Center the line */
+    border-top: 3px solid #007bff;
+    /* You can adjust the thickness and color */
+    margin: 20px auto;
+    /* Center the line */
 }
 
 /* why choose us*/
 .card {
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card-body {
+}
+
+.card-body {
     padding: 2rem;
-  }
-  
-  .card-title {
+}
+
+.card-title {
     font-size: 1.25rem;
     font-weight: bold;
-  }
-  
-  .card-text {
+}
+
+.card-text {
     font-size: 1rem;
     color: #6c757d;
-  }
+}
+/* Remove .home-section-specific styles */
+/* Content Styling */
+.content {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Image Container Styling */
+.image-container {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Image Responsiveness */
+.image-container img {
+    width: 100%; /* Full width by default */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 500px; /* Restrict maximum width for large screens (default setting) */
+    border-radius: 10px; /* Optional styling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional styling */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .image-container img {
+        max-width: 90%; /* CHANGED: Smaller max width for mobile */
+    }
+}
+
+/* Responsive Design for Larger Screens */
+@media (min-width: 1024px) {
+    .image-container img {
+        max-width: 700px; /* CHANGED: Larger max width for laptops/desktops */
+    }
+}
+
