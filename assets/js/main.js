@@ -18,7 +18,7 @@ $(document).ready(function () {
 
         function ActivBtn(button) {
             $('.collapse').removeClass('show'); // hide hamburger icon
-
+            
             $('.nav-link').removeClass('active'); // Remove active from all buttons
             $(button).addClass('active');         // Set active on the clicked button  
                
